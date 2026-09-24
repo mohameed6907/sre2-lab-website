@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://sre2-lab.vercel.app
+
+# Sitemaps
+Sitemap: https://sre2-lab.vercel.app/sitemap.xml
