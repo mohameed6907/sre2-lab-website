@@ -8,12 +8,6 @@
   --muted: #475569;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-heading: var(--font-outfit);
-  --font-body: var(--font-inter);
-}
 
 /* Ambient calm blue glow at the top of every page in light theme matching logo */
 body::before {
