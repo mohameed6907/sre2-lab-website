@@ -13,6 +13,21 @@ export const metadata: Metadata = {
     description:
       "Official blogs, dispatches, perspectives, and research stories from SRE² Lab at SBTÜ.",
     url: "https://sre2lab.org.tr/blog",
+    images: [
+      {
+        url: "https://sre2lab.org.tr/Logo/SRE2_Logo_Primary.png",
+        width: 1774,
+        height: 561,
+        alt: "SRE² Lab Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Research Blog & Dispatches | SRE² Lab",
+    description:
+      "Official blogs, dispatches, perspectives, and research stories from SRE² Lab at SBTÜ.",
+    images: ["https://sre2lab.org.tr/Logo/SRE2_Logo_Primary.png"],
   },
 };
 

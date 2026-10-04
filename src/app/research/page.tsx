@@ -16,12 +16,19 @@ export const metadata: Metadata = {
     url: "https://sre2lab.org.tr/research",
     images: [
       {
-        url: "/research/research-hero-banner.jpg",
+        url: "https://sre2lab.org.tr/research/research-hero-banner.jpg",
         width: 1024,
         height: 343,
         alt: "SRE² Lab Nanotechnology and Energy Research Scientific Cover",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Research Axes & Strategic Pillars | SRE² Lab",
+    description:
+      "Explore SRE² Lab's scientific research axes and strategic pillars in renewable energy harvesting, flexible electronics, smart sensing, and self-powered systems.",
+    images: ["https://sre2lab.org.tr/research/research-hero-banner.jpg"],
   },
 };
 

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Outfit, Inter } from "next/font/google";
 import "./globals.css";
 import ConditionalLayout from "./components/ConditionalLayout";
@@ -20,7 +19,7 @@ const inter = Inter({
 
 /* ---------- site-wide <head> metadata ---------- */
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://sre2lab.org.tr"),
+  metadataBase: new URL("https://sre2lab.org.tr"),
   title: {
     default: "SRE² Lab - Sustainability & Renewable Energy Research Laboratory",
     template: "%s | SRE² Lab",
@@ -78,7 +77,7 @@ export const metadata: Metadata = {
       "SRE² Lab develops advanced technologies for harvesting, storing, sensing and intelligently managing energy through sustainable materials, flexible electronics and autonomous self-powered systems.",
     images: [
       {
-        url: "/Logo/SRE2_Logo_Primary.png",
+        url: "https://sre2lab.org.tr/Logo/SRE2_Logo_Primary.png",
         width: 1774,
         height: 561,
         alt: "SRE² Lab Logo",
@@ -90,7 +89,7 @@ export const metadata: Metadata = {
     title: "SRE² Lab - Sustainability & Renewable Energy Research Laboratory",
     description:
       "SRE² Lab develops advanced technologies for harvesting, storing, sensing and intelligently managing energy through sustainable materials, flexible electronics and autonomous self-powered systems.",
-    images: ["/Logo/SRE2_Logo_Primary.png"],
+    images: ["https://sre2lab.org.tr/Logo/SRE2_Logo_Primary.png"],
   },
 
   robots: {
@@ -168,10 +167,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* ---- Structured-data ---- */}
-        <Script
-          id="website-ld-json"
+        <script
           type="application/ld+json"
-          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(jsonLdGraph),
           }}

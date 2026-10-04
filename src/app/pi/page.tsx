@@ -17,12 +17,19 @@ export const metadata: Metadata = {
     type: "profile",
     images: [
       {
-        url: "/pfp/saqib.jpg",
+        url: "https://sre2lab.org.tr/pfp/saqib.jpg",
         width: 800,
         height: 900,
         alt: "Dr. Qazi Muhammad Saqib, PhD - Principal Investigator of SRE² Lab",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dr. Qazi Muhammad Saqib, PhD - Principal Investigator | SRE² Lab",
+    description:
+      "Official Curriculum Vitae, academic appointments, education, awards, and collaborative research network of Dr. Qazi Muhammad Saqib, Principal Investigator of SRE² Lab at SBTÜ.",
+    images: ["https://sre2lab.org.tr/pfp/saqib.jpg"],
   },
 };
 

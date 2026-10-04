@@ -15,6 +15,21 @@ export const metadata: Metadata = {
     description:
       "Official news, academic delegations, institutional milestones, and media announcements from SRE² Lab at SBTÜ.",
     url: "https://sre2lab.org.tr/news",
+    images: [
+      {
+        url: "https://sre2lab.org.tr/Logo/SRE2_Logo_Primary.png",
+        width: 1774,
+        height: 561,
+        alt: "SRE² Lab Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "News & Announcements | SRE² Lab",
+    description:
+      "Official news, academic delegations, institutional milestones, and media announcements from SRE² Lab at SBTÜ.",
+    images: ["https://sre2lab.org.tr/Logo/SRE2_Logo_Primary.png"],
   },
 };
 

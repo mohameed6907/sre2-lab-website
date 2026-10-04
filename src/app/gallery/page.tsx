@@ -14,6 +14,21 @@ export const metadata: Metadata = {
     description:
       "Photographic albums and video chronicles of academic delegations, campus ceremonies, student competitions, and laboratory events from SRE² Lab at SBTÜ.",
     url: "https://sre2lab.org.tr/gallery",
+    images: [
+      {
+        url: "https://sre2lab.org.tr/Logo/SRE2_Logo_Primary.png",
+        width: 1774,
+        height: 561,
+        alt: "SRE² Lab Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Visual Gallery & Chronicles | SRE² Lab",
+    description:
+      "Photographic albums and video chronicles of academic delegations, campus ceremonies, student competitions, and laboratory events from SRE² Lab at SBTÜ.",
+    images: ["https://sre2lab.org.tr/Logo/SRE2_Logo_Primary.png"],
   },
 };
 

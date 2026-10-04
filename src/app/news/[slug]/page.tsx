@@ -39,7 +39,9 @@ export async function generateMetadata(props: BlogPostPageProps) {
   }
 
   const postUrl = `https://sre2lab.org.tr/news/${post.slug}`;
-  const imageUrl = post.img_file_name ? `/news/img/${post.img_file_name}` : "/Logo/SRE2_Logo_Primary.png";
+  const imageUrl = post.img_file_name
+    ? `https://sre2lab.org.tr/news/img/${post.img_file_name}`
+    : "https://sre2lab.org.tr/Logo/SRE2_Logo_Primary.png";
 
   return {
     title: post.title,

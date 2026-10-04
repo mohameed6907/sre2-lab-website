@@ -13,6 +13,21 @@ export const metadata: Metadata = {
     description:
       "Academic and scientific research partners collaborating with SRE² Lab across sustainable energy, self-powered systems, sensors, and flexible electronics.",
     url: "https://sre2lab.org.tr/collaborators",
+    images: [
+      {
+        url: "https://sre2lab.org.tr/Logo/SRE2_Logo_Primary.png",
+        width: 1774,
+        height: 561,
+        alt: "SRE² Lab Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Collaborating Professors & Institutions | SRE² Lab",
+    description:
+      "Academic and scientific research partners collaborating with SRE² Lab across sustainable energy, self-powered systems, sensors, and flexible electronics.",
+    images: ["https://sre2lab.org.tr/Logo/SRE2_Logo_Primary.png"],
   },
 };
 

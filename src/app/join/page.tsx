@@ -12,6 +12,21 @@ export const metadata: Metadata = {
     description:
       "Join SRE² Lab as an undergraduate researcher, Master's student, PhD candidate, or postdoctoral fellow at SBTÜ.",
     url: "https://sre2lab.org.tr/join",
+    images: [
+      {
+        url: "https://sre2lab.org.tr/Logo/SRE2_Logo_Primary.png",
+        width: 1774,
+        height: 561,
+        alt: "SRE² Lab Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Join Us - Careers & Research Opportunities | SRE² Lab",
+    description:
+      "Join SRE² Lab as an undergraduate researcher, Master's student, PhD candidate, or postdoctoral fellow at SBTÜ.",
+    images: ["https://sre2lab.org.tr/Logo/SRE2_Logo_Primary.png"],
   },
 };
 

@@ -34,8 +34,8 @@ export default function Header() {
           : "bg-white/90 backdrop-blur-md border-b border-slate-100 py-3 sm:py-4"
       }`}
     >
-      <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16">
-        <div className="flex items-center justify-between gap-6">
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-14 xl:px-16">
+        <div className="flex items-center justify-between gap-4 sm:gap-6">
           {/* Official SRE² Lab Logo — start of header, slightly after the start edge */}
           <Link href="/" className="flex items-center group select-none pl-1 sm:pl-2 shrink-0">
             <Image
@@ -44,7 +44,7 @@ export default function Header() {
               width={400}
               height={114}
               priority
-              className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+              className="h-10 sm:h-14 md:h-18 lg:h-22 xl:h-28 w-auto max-w-[200px] sm:max-w-none object-contain transition-transform duration-300 group-hover:scale-[1.02]"
             />
           </Link>
 

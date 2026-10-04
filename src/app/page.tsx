@@ -15,14 +15,22 @@ export const metadata: Metadata = {
     description:
       "Sustainability & Renewable Energy Research Laboratory (SRE² Lab) at Sivas University of Science and Technology (SBTÜ). Developing advanced energy harvesting, self-powered systems, supercapacitors, and flexible electronics.",
     url: "https://sre2lab.org.tr",
+    siteName: "SRE² Lab",
     images: [
       {
-        url: "/hero/sre-lab-interior.jpg",
+        url: "https://sre2lab.org.tr/hero/sre-lab-interior.jpg",
         width: 1200,
         height: 675,
         alt: "Sustainability & Renewable Energy Research Laboratory (SRE² Lab) Interior at SBTÜ",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SRE² Lab - Next-Gen Sustainable Energy & Self-Powered Systems",
+    description:
+      "Sustainability & Renewable Energy Research Laboratory (SRE² Lab) at Sivas University of Science and Technology (SBTÜ). Developing advanced energy harvesting, self-powered systems, supercapacitors, and flexible electronics.",
+    images: ["https://sre2lab.org.tr/hero/sre-lab-interior.jpg"],
   },
 };
 
@@ -117,11 +125,12 @@ export default function Home() {
 
         <div className="container-custom relative z-10 w-full py-8">
           {/* Luminous Frosted Glass Card: Elegant, Ordered & 100% Legible */}
-          <div className="max-w-2xl bg-white/95 backdrop-blur-xl border border-white/90 p-8 sm:p-10 md:p-12 rounded-sm shadow-2xl shadow-slate-900/10">
+          <div className="max-w-2xl bg-white/95 backdrop-blur-xl border border-white/90 p-5 sm:p-10 md:p-12 rounded-sm shadow-2xl shadow-slate-900/10">
             {/* Full Laboratory Name (Without Abbreviations) */}
             <div className="flex items-center gap-2 mb-3">
-              <span className="font-heading text-xs sm:text-sm font-extrabold uppercase tracking-[0.2em] text-emerald-600 whitespace-nowrap">
-                Sustainability &amp; Renewable Energy Research Laboratory </span>
+              <span className="font-heading text-xs sm:text-sm font-extrabold uppercase tracking-[0.12em] sm:tracking-[0.2em] text-emerald-600 break-words">
+                Sustainability &amp; Renewable Energy Research Laboratory
+              </span>
             </div>
 
             {/* University & Lab Acronym */}
@@ -131,8 +140,8 @@ export default function Home() {
 
             {/* Main Headline */}
             <h1 className="font-heading font-extralight text-slate-900 text-3xl sm:text-4xl lg:text-5xl leading-[1.08] tracking-tight mb-6">
-              Next-Generation <br />
-              <span className="font-bold text-emerald-700">Sustainable Energy</span> &amp; <br />
+              Next-Generation <br className="hidden sm:inline" />
+              <span className="font-bold text-emerald-700">Sustainable Energy</span> &amp; <br className="hidden sm:inline" />
               <span className="font-bold text-slate-900">Self-Powered Technologies.</span>
             </h1>
 
@@ -152,18 +161,18 @@ export default function Home() {
             </div>
 
             {/* Key Indicators */}
-            <div className="pt-6 border-t border-slate-200/80 grid grid-cols-3 gap-4">
+            <div className="pt-6 border-t border-slate-200/80 grid grid-cols-3 gap-2 sm:gap-4">
               <div>
-                <p className="font-heading font-extrabold text-2xl sm:text-3xl text-slate-900">5</p>
-                <p className="text-[10px] sm:text-[11px] font-heading font-semibold uppercase tracking-wider text-slate-500 mt-0.5">Research Axes</p>
+                <p className="font-heading font-extrabold text-xl sm:text-3xl text-slate-900">5</p>
+                <p className="text-[9px] sm:text-[11px] font-heading font-semibold uppercase tracking-wider text-slate-500 mt-0.5 leading-tight">Research Axes</p>
               </div>
               <div>
-                <p className="font-heading font-extrabold text-2xl sm:text-3xl text-emerald-700">100%</p>
-                <p className="text-[10px] sm:text-[11px] font-heading font-semibold uppercase tracking-wider text-slate-500 mt-0.5">Self-Powered</p>
+                <p className="font-heading font-extrabold text-xl sm:text-3xl text-emerald-700">100%</p>
+                <p className="text-[9px] sm:text-[11px] font-heading font-semibold uppercase tracking-wider text-slate-500 mt-0.5 leading-tight">Self-Powered</p>
               </div>
               <div>
-                <p className="font-heading font-extrabold text-2xl sm:text-3xl text-slate-900">SBTÜ</p>
-                <p className="text-[10px] sm:text-[11px] font-heading font-semibold uppercase tracking-wider text-slate-500 mt-0.5">Research Laboratory</p>
+                <p className="font-heading font-extrabold text-xl sm:text-3xl text-slate-900">SBTÜ</p>
+                <p className="text-[9px] sm:text-[11px] font-heading font-semibold uppercase tracking-wider text-slate-500 mt-0.5 leading-tight">Research Laboratory</p>
               </div>
             </div>
           </div>
