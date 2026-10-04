@@ -34,10 +34,10 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <Link href="/" className="inline-block mb-4 group">
               <Image
-                src="/sre-logo.png"
+                src="/Logo/SRE2_Logo_Primary.svg"
                 alt="SRE² Lab Logo"
                 width={260}
-                height={77}
+                height={82}
                 className="h-12 sm:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
               />
             </Link>

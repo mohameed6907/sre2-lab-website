@@ -4,8 +4,8 @@
 ### Sustainability & Renewable Energy Research Laboratory
 **Sivas University of Science and Technology (SBTÜ)**
 
-[![Next.js](https://img.shields.io/badge/Next.js-15.3.1-black?style=flat&logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19.0.0-blue?style=flat&logo=react)](https://react.dev/)
+[![Next.js](https://img.shields.io/badge/Next.js-16.3.6-black?style=flat&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.3.0-blue?style=flat&logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38bdf8?style=flat&logo=tailwindcss)](https://tailwindcss.com/)
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=flat&logo=vercel)](https://vercel.com/)
@@ -46,8 +46,8 @@ Led by **Dr. Qazi Muhammad Saqib**, the laboratory develops zero-power, battery-
 │   ├── hero/              # Hero showcase background assets
 │   ├── news/              # Press coverage and announcement imagery
 │   ├── pfp/               # High-resolution team profile pictures
+│   ├── Logo/              # Vector (SVG) and high-res brand identity assets
 │   ├── research/          # Scientific figures, axis schematics, and pillar assets
-│   ├── sre-logo.png       # Official SRE² Lab Logo
 │   └── favicon.ico        # Browser favicons
 ├── src/
 │   ├── app/

@@ -58,11 +58,12 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
-      { url: "/sre-icon.png", type: "image/png", sizes: "512x512" },
+      { url: "/Logo/SRE2_Logo_Icon.svg", type: "image/svg+xml" },
+      { url: "/Logo/SRE2_Logo_Icon.png", type: "image/png", sizes: "512x512" },
     ],
     shortcut: "/favicon.ico",
     apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      { url: "/Logo/SRE2_Logo_Icon.png", sizes: "180x180", type: "image/png" },
     ],
   },
 
@@ -77,9 +78,9 @@ export const metadata: Metadata = {
       "SRE² Lab develops advanced technologies for harvesting, storing, sensing and intelligently managing energy through sustainable materials, flexible electronics and autonomous self-powered systems.",
     images: [
       {
-        url: "/sre-logo.png",
-        width: 512,
-        height: 512,
+        url: "/Logo/SRE2_Logo_Primary.png",
+        width: 1774,
+        height: 561,
         alt: "SRE² Lab Logo",
       },
     ],
@@ -89,7 +90,7 @@ export const metadata: Metadata = {
     title: "SRE² Lab - Sustainability & Renewable Energy Research Laboratory",
     description:
       "SRE² Lab develops advanced technologies for harvesting, storing, sensing and intelligently managing energy through sustainable materials, flexible electronics and autonomous self-powered systems.",
-    images: ["/sre-logo.png"],
+    images: ["/Logo/SRE2_Logo_Primary.png"],
   },
 
   robots: {
@@ -134,9 +135,9 @@ const jsonLdGraph = {
       "url": "https://sre2lab.org.tr",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://sre2lab.org.tr/sre-logo.png",
-        "width": "512",
-        "height": "512"
+        "url": "https://sre2lab.org.tr/Logo/SRE2_Logo_Primary.png",
+        "width": "1774",
+        "height": "561"
       },
       "image": "https://sre2lab.org.tr/hero/sre-lab-interior.jpg",
       "parentOrganization": {
