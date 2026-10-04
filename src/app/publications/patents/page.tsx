@@ -1,9 +1,20 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { patents } from "@/lib/publicationsData";
 
-export const metadata = {
-  title: "SRE² Lab - Patents & IP",
-  description: "Intellectual property and device patents authored by Dr. Qazi Muhammad Saqib and colleagues.",
+export const metadata: Metadata = {
+  title: "Patents & Intellectual Property",
+  description:
+    "Patents and intellectual property innovations developed by Dr. Qazi Muhammad Saqib and colleagues in self-powered devices, nanogenerators, and smart sensor systems.",
+  alternates: {
+    canonical: "https://sre2lab.org.tr/publications/patents",
+  },
+  openGraph: {
+    title: "Patents & Intellectual Property | SRE² Lab",
+    description:
+      "Intellectual property and device patents authored by Dr. Qazi Muhammad Saqib and colleagues.",
+    url: "https://sre2lab.org.tr/publications/patents",
+  },
 };
 
 export default function PatentsPage() {

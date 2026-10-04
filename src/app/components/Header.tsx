@@ -175,6 +175,12 @@ export default function Header() {
               </button>
               <div className="absolute left-0 mt-1 w-52 bg-white border border-slate-200/90 rounded-sm shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-1.5">
                 <Link
+                  href="/publications"
+                  className="block px-4 py-2 text-xs font-semibold text-slate-800 hover:bg-slate-50 hover:text-emerald-700 transition-colors border-b border-slate-100"
+                >
+                  All Publications
+                </Link>
+                <Link
                   href="/publications/journals"
                   className="block px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 hover:text-emerald-700 transition-colors"
                 >
@@ -411,6 +417,13 @@ export default function Header() {
               </button>
               {(mobilePubsOpen || isPubsActive) && (
                 <div className="pl-4 space-y-1 border-l-2 border-emerald-600/30 ml-3 mt-1">
+                  <Link
+                    href="/publications"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block px-2 py-1.5 text-xs font-semibold text-slate-800 hover:text-emerald-700"
+                  >
+                    All Publications
+                  </Link>
                   <Link
                     href="/publications/journals"
                     onClick={() => setMobileMenuOpen(false)}

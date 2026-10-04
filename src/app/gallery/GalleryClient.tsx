@@ -328,7 +328,7 @@ export default function GalleryClient() {
                   >
                     <Image
                       src={item.coverImage}
-                      alt={item.title}
+                      alt={`${item.title} - SRE² Lab Gallery Album`}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 768px) 100vw, 600px"
@@ -550,7 +550,7 @@ export default function GalleryClient() {
                     }`}
                     aria-label={`Jump to photo ${pIdx + 1}`}
                   >
-                    <Image src={photo.url} alt={`Thumbnail ${pIdx + 1}`} fill className="object-cover" sizes="56px" />
+                    <Image src={photo.url} alt={`${activeItem.title} - photo thumbnail ${pIdx + 1}`} fill className="object-cover" sizes="56px" />
                   </button>
                 ))}
               </div>

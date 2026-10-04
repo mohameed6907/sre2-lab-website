@@ -1,11 +1,21 @@
 import { teamData } from "@/lib/info_helper.server";
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "SRE² Lab - Research Team",
+export const metadata: Metadata = {
+  title: "Research Team & Members",
   description:
-    "Meet the researchers, engineers, and scientists behind the SRE² Lab (Sustainability & Renewable Energy Research Laboratory).",
+    "Meet the researchers, graduate students, and engineers at SRE² Lab working on flexible electronics, self-powered sensors, and renewable energy technologies at SBTÜ.",
+  alternates: {
+    canonical: "https://sre2lab.org.tr/team",
+  },
+  openGraph: {
+    title: "Research Team & Members | SRE² Lab",
+    description:
+      "Meet the researchers, graduate students, and engineers at SRE² Lab working on flexible electronics, self-powered sensors, and renewable energy technologies at SBTÜ.",
+    url: "https://sre2lab.org.tr/team",
+  },
 };
 
 export default function Team() {
@@ -43,7 +53,7 @@ export default function Team() {
                 <div className="relative aspect-[4/4.5] w-full max-w-[260px] mx-auto bg-slate-50 border border-slate-200/80 rounded-xl overflow-hidden shadow-xs">
                   <Image
                     src={`/pfp/${pi.pfp_file_name}`}
-                    alt={pi.name}
+                    alt={`${pi.name} - ${pi.role} at SRE² Lab`}
                     fill
                     priority
                     className="object-cover object-top"
@@ -103,7 +113,7 @@ export default function Team() {
                   <div className="relative w-full aspect-[4/3.8] bg-slate-50 rounded-xl overflow-hidden border border-slate-100 mb-4">
                     <Image
                       src={`/pfp/${member.pfp_file_name}`}
-                      alt={member.name}
+                      alt={`${member.name} - ${member.role} at SRE² Lab`}
                       fill
                       className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"

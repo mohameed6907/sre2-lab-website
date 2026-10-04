@@ -1,10 +1,29 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Principal Investigator - Dr. Qazi Muhammad Saqib, PhD | SRE² Lab",
+export const metadata: Metadata = {
+  title: "Dr. Qazi Muhammad Saqib, PhD - Principal Investigator",
   description:
-    "Official Curriculum Vitae, academic appointments, education, awards, and collaborative research network of Dr. Qazi Muhammad Saqib, Principal Investigator of SRE² Lab.",
+    "Curriculum Vitae, academic career, research appointments, education, awards, and international research collaborations of Dr. Qazi Muhammad Saqib, Assistant Professor and Principal Investigator of SRE² Lab at Sivas University of Science and Technology (SBTÜ).",
+  alternates: {
+    canonical: "https://sre2lab.org.tr/pi",
+  },
+  openGraph: {
+    title: "Dr. Qazi Muhammad Saqib, PhD - Principal Investigator | SRE² Lab",
+    description:
+      "Official Curriculum Vitae, academic appointments, education, awards, and collaborative research network of Dr. Qazi Muhammad Saqib, Principal Investigator of SRE² Lab at SBTÜ.",
+    url: "https://sre2lab.org.tr/pi",
+    type: "profile",
+    images: [
+      {
+        url: "/pfp/saqib.jpg",
+        width: 800,
+        height: 900,
+        alt: "Dr. Qazi Muhammad Saqib, PhD - Principal Investigator of SRE² Lab",
+      },
+    ],
+  },
 };
 
 const educationData = [
@@ -142,9 +161,65 @@ const collaborationCountries = [
   { name: "Pakistan", flag: "🇵🇰" },
 ];
 
+const piPersonSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://sre2lab.org.tr/pi#person",
+    "name": "Dr. Qazi Muhammad Saqib",
+    "givenName": "Qazi Muhammad",
+    "familyName": "Saqib",
+    "honorificPrefix": "Dr.",
+    "honorificSuffix": "PhD",
+    "jobTitle": "Assistant Professor & Principal Research Scientist",
+    "worksFor": {
+      "@type": "CollegeOrUniversity",
+      "name": "Sivas University of Science & Technology",
+      "alternateName": ["SBTÜ", "Sivas Bilim ve Teknoloji Üniversitesi"],
+      "url": "https://www.sbtu.edu.tr"
+    },
+    "affiliation": {
+      "@type": "ResearchOrganization",
+      "name": "Sustainability & Renewable Energy Research Laboratory (SRE² Lab)",
+      "url": "https://sre2lab.org.tr"
+    },
+    "description": "Department of Electrical & Electronics Engineering, Sivas University of Science & Technology (SBTÜ). Founder & Team Lead of SRE² Lab, directing research on self-powered nanogenerators (TENG/PENG), flexible electronics, and autonomous sensor systems.",
+    "image": "https://sre2lab.org.tr/pfp/saqib.jpg",
+    "url": "https://sre2lab.org.tr/pi",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=3U5h4AoAAAAJ&hl=en&oi=ao",
+      "https://www.researchgate.net/profile/Qazi-Saqib",
+      "https://orcid.org/0000-0001-8829-0230",
+      "https://www.linkedin.com/in/dr-qazi-muhammad-saqib-ph-d-b7202411b"
+    ],
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Jeju National University",
+        "location": "Republic of Korea"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Kyungpook National University",
+        "location": "Republic of Korea"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Dawood University of Engineering and Technology",
+        "location": "Pakistan"
+      }
+    ]
+  }
+};
+
 export default function PIProfile() {
   return (
     <div className="min-h-screen bg-slate-50/60 pb-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(piPersonSchema) }}
+      />
       {/* ── Breadcrumb Sub-Navigation ───────────────────────────── */}
       <div className="bg-white border-b border-slate-200/80 pt-28 pb-4">
         <div className="container-custom max-w-6xl">
@@ -175,7 +250,7 @@ export default function PIProfile() {
               <div className="relative w-56 h-72 sm:w-64 sm:h-80 rounded-2xl overflow-hidden shadow-md border-4 border-slate-100 bg-slate-100 transition-transform duration-300 hover:scale-[1.01]">
                 <Image
                   src="/pfp/saqib.jpg"
-                  alt="Dr. Qazi Muhammad Saqib, PhD"
+                  alt="Dr. Qazi Muhammad Saqib, PhD - Principal Investigator of SRE² Lab"
                   fill
                   priority
                   className="object-cover object-top"

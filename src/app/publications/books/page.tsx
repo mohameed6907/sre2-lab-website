@@ -1,9 +1,20 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { books } from "@/lib/publicationsData";
 
-export const metadata = {
-  title: "SRE² Lab - Books & Chapters",
-  description: "Academic books and scholarly book chapters authored by Dr. Qazi Muhammad Saqib and colleagues.",
+export const metadata: Metadata = {
+  title: "Books & Book Chapters",
+  description:
+    "Academic books and scholarly book chapters authored by Dr. Qazi Muhammad Saqib and colleagues in nanotechnology, nanomaterials, and renewable energy.",
+  alternates: {
+    canonical: "https://sre2lab.org.tr/publications/books",
+  },
+  openGraph: {
+    title: "Books & Book Chapters | SRE² Lab",
+    description:
+      "Academic books and scholarly book chapters authored by Dr. Qazi Muhammad Saqib and colleagues.",
+    url: "https://sre2lab.org.tr/publications/books",
+  },
 };
 
 export default function BooksPage() {

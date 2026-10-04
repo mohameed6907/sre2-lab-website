@@ -1,10 +1,20 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import GalleryClient from "./GalleryClient";
 
-export const metadata = {
-  title: "SRE² Lab - Visual Gallery",
+export const metadata: Metadata = {
+  title: "Visual Gallery & Chronicles",
   description:
     "Photographic albums and video chronicles of academic delegations, campus ceremonies, student competitions, and laboratory events from SRE² Lab at SBTÜ.",
+  alternates: {
+    canonical: "https://sre2lab.org.tr/gallery",
+  },
+  openGraph: {
+    title: "Visual Gallery & Chronicles | SRE² Lab",
+    description:
+      "Photographic albums and video chronicles of academic delegations, campus ceremonies, student competitions, and laboratory events from SRE² Lab at SBTÜ.",
+    url: "https://sre2lab.org.tr/gallery",
+  },
 };
 
 export default function GalleryPage() {

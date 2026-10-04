@@ -1,9 +1,20 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { conferencePapers } from "@/lib/publicationsData";
 
-export const metadata = {
-  title: "SRE² Lab - Conference Proceedings",
-  description: "International conference proceedings and symposium presentations by Dr. Qazi Muhammad Saqib and colleagues.",
+export const metadata: Metadata = {
+  title: "Conference Proceedings & Presentations",
+  description:
+    "International conference proceedings, peer-reviewed symposium contributions, and presentations by Dr. Qazi Muhammad Saqib and SRE² Lab researchers.",
+  alternates: {
+    canonical: "https://sre2lab.org.tr/publications/conferences",
+  },
+  openGraph: {
+    title: "Conference Proceedings & Presentations | SRE² Lab",
+    description:
+      "International conference proceedings and symposium presentations by Dr. Qazi Muhammad Saqib and colleagues.",
+    url: "https://sre2lab.org.tr/publications/conferences",
+  },
 };
 
 export default function ConferencePapersPage() {

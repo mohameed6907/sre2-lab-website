@@ -17,6 +17,7 @@ const academicLinks = [
   { href: "/pi", label: "Principal Investigator" },
   { href: "/team", label: "Research Team" },
   { href: "/collaborators", label: "Collaborating Professors" },
+  { href: "/publications", label: "All Publications" },
   { href: "/publications/journals", label: "Selected Articles" },
   { href: "/publications/conferences", label: "Conference Papers" },
   { href: "/publications/patents", label: "Patents & IP" },

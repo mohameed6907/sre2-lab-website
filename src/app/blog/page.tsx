@@ -1,9 +1,19 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Blog - SRE² Lab",
+export const metadata: Metadata = {
+  title: "Research Blog & Dispatches",
   description:
-    "Official blogs, dispatches, perspectives, and research stories from SRE² Lab.",
+    "Official blog dispatches, academic perspectives, and research stories from the Sustainability & Renewable Energy Research Laboratory (SRE² Lab) at SBTÜ.",
+  alternates: {
+    canonical: "https://sre2lab.org.tr/blog",
+  },
+  openGraph: {
+    title: "Research Blog & Dispatches | SRE² Lab",
+    description:
+      "Official blogs, dispatches, perspectives, and research stories from SRE² Lab at SBTÜ.",
+    url: "https://sre2lab.org.tr/blog",
+  },
 };
 
 export default function BlogPage() {

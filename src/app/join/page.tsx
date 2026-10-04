@@ -1,6 +1,18 @@
-export const metadata = {
-  title: "SRE² Lab - Join Us",
-  description: "Join SRE² Lab as an undergraduate researcher, Master's student, PhD candidate, or postdoctoral fellow.",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Join Us - Careers & Research Opportunities",
+  description:
+    "Join SRE² Lab at Sivas University of Science and Technology (SBTÜ) as an undergraduate researcher, Master's student, PhD candidate, or postdoctoral fellow.",
+  alternates: {
+    canonical: "https://sre2lab.org.tr/join",
+  },
+  openGraph: {
+    title: "Join Us - Careers & Research Opportunities | SRE² Lab",
+    description:
+      "Join SRE² Lab as an undergraduate researcher, Master's student, PhD candidate, or postdoctoral fellow at SBTÜ.",
+    url: "https://sre2lab.org.tr/join",
+  },
 };
 
 export default function JoinUs() {

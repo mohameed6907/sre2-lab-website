@@ -33,14 +33,39 @@ export async function generateMetadata(props: BlogPostPageProps) {
 
   if (!post) {
     return {
-      title: "Post Not Found - SRE² Lab",
-      description: "The requested blog post could not be found.",
+      title: "Post Not Found",
+      description: "The requested news post could not be found.",
     };
   }
 
+  const postUrl = `https://sre2lab.org.tr/news/${post.slug}`;
+  const imageUrl = post.img_file_name ? `/news/img/${post.img_file_name}` : "/sre-logo.png";
+
   return {
-    title: `${post.title} - SRE² Lab`,
+    title: post.title,
     description: post.excerpt,
+    alternates: {
+      canonical: postUrl,
+    },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url: postUrl,
+      type: "article",
+      publishedTime: post.date,
+      images: [
+        {
+          url: imageUrl,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [imageUrl],
+    },
   };
 }
 
@@ -77,8 +102,39 @@ export default async function BlogPostPage(props: BlogPostPageProps) {
     notFound();
   }
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": post.title,
+    "description": post.excerpt,
+    "datePublished": post.date,
+    "dateModified": post.date,
+    "mainEntityOfPage": `https://sre2lab.org.tr/news/${post.slug}`,
+    "image": post.img_file_name
+      ? [`https://sre2lab.org.tr/news/img/${post.img_file_name}`]
+      : ["https://sre2lab.org.tr/sre-logo.png"],
+    "author": {
+      "@type": "Person",
+      "name": "Dr. Qazi Muhammad Saqib",
+      "url": "https://sre2lab.org.tr/pi"
+    },
+    "publisher": {
+      "@type": "ResearchOrganization",
+      "name": "Sustainability & Renewable Energy Research Laboratory (SRE² Lab)",
+      "url": "https://sre2lab.org.tr",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sre2lab.org.tr/sre-logo.png"
+      }
+    }
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       {/* ── Article Header ─────────────────────────────────────── */}
       <section className="pt-28 pb-12 md:pt-36 md:pb-16 border-b border-slate-200">
         <div className="container-custom max-w-4xl fade-up">

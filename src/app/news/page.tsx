@@ -1,11 +1,21 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
 import { newsData } from "@/lib/info_helper.server";
 
-export const metadata = {
-  title: "SRE² Lab - News & Announcements",
+export const metadata: Metadata = {
+  title: "News & Announcements",
   description:
-    "Official news, academic delegations, institutional milestones, and media announcements from the Sustainability & Renewable Energy Research Laboratory (SRE² Lab).",
+    "Official news, international bilateral academic delegations, research milestones, and media announcements from the Sustainability & Renewable Energy Research Laboratory (SRE² Lab) at SBTÜ.",
+  alternates: {
+    canonical: "https://sre2lab.org.tr/news",
+  },
+  openGraph: {
+    title: "News & Announcements | SRE² Lab",
+    description:
+      "Official news, academic delegations, institutional milestones, and media announcements from SRE² Lab at SBTÜ.",
+    url: "https://sre2lab.org.tr/news",
+  },
 };
 
 // Map each news article to an optional verified external source link
@@ -76,7 +86,7 @@ export default function News() {
       </section>
 
       {/* ── Main News Stream (Clean Vertical List) ───────────── */}
-      <section className="py-14 sm:py-20 bg-slate-50/60">
+      <section id="press" className="py-14 sm:py-20 bg-slate-50/60 scroll-mt-20">
         <div className="container-custom max-w-5xl">
           <div className="flex items-center justify-between pb-4 mb-8 border-b border-slate-200">
             <h2 className="font-heading font-extrabold text-2xl sm:text-3xl text-slate-900">

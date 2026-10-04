@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import {
   journalArticles,
   conferencePapers,
@@ -6,10 +7,19 @@ import {
   books,
 } from "@/lib/publicationsData";
 
-export const metadata = {
-  title: "SRE² Lab - Publications",
+export const metadata: Metadata = {
+  title: "Scientific Publications & Scholarly Output",
   description:
-    "Complete scientific publications record of Dr. Qazi Muhammad Saqib, including peer-reviewed articles, conference papers, patents, and books.",
+    "Comprehensive scientific publications record of SRE² Lab and Dr. Qazi Muhammad Saqib, including peer-reviewed high-impact journal articles, international conference papers, patents, and books.",
+  alternates: {
+    canonical: "https://sre2lab.org.tr/publications",
+  },
+  openGraph: {
+    title: "Scientific Publications & Scholarly Output | SRE² Lab",
+    description:
+      "Complete scientific publications record of Dr. Qazi Muhammad Saqib and SRE² Lab researchers, featuring peer-reviewed articles, conference papers, patents, and books.",
+    url: "https://sre2lab.org.tr/publications",
+  },
 };
 
 const navTabs = [

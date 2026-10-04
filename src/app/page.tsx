@@ -1,11 +1,29 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
 import { newsData } from "@/lib/info_helper.server";
 
-export const metadata = {
-  title: "SRE² Lab - Home",
+export const metadata: Metadata = {
+  title: "SRE² Lab - Next-Gen Sustainable Energy & Self-Powered Systems",
   description:
     "Sustainability & Renewable Energy Research Laboratory (SRE² Lab) at Sivas University of Science and Technology (SBTÜ). Developing advanced energy harvesting, self-powered systems, supercapacitors, and flexible electronics.",
+  alternates: {
+    canonical: "https://sre2lab.org.tr",
+  },
+  openGraph: {
+    title: "SRE² Lab - Next-Gen Sustainable Energy & Self-Powered Systems",
+    description:
+      "Sustainability & Renewable Energy Research Laboratory (SRE² Lab) at Sivas University of Science and Technology (SBTÜ). Developing advanced energy harvesting, self-powered systems, supercapacitors, and flexible electronics.",
+    url: "https://sre2lab.org.tr",
+    images: [
+      {
+        url: "/hero/sre-lab-interior.jpg",
+        width: 1200,
+        height: 675,
+        alt: "Sustainability & Renewable Energy Research Laboratory (SRE² Lab) Interior at SBTÜ",
+      },
+    ],
+  },
 };
 
 const researchAxes = [
@@ -86,7 +104,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/hero/sre-lab-interior.jpg"
-            alt="Sustainability & Renewable Energy Research Laboratory (SRE² Lab)"
+            alt="Sustainability & Renewable Energy Research Laboratory (SRE² Lab) Interior at SBTÜ"
             fill
             priority
             quality={95}
@@ -242,7 +260,7 @@ export default function Home() {
                   <div className="relative w-full aspect-[4/3] bg-slate-50 overflow-hidden border-b border-slate-100 flex items-center justify-center p-2">
                     <Image
                       src={axis.image}
-                      alt={axis.title}
+                      alt={`Research Axis ${axis.num}: ${axis.title}`}
                       fill
                       className="object-contain p-2 group-hover:scale-105 transition-transform duration-500"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 20vw"
@@ -300,7 +318,7 @@ export default function Home() {
                 <div className="relative w-20 h-20 mb-4 shrink-0 rounded-full overflow-hidden bg-slate-50 p-2 shadow-2xs group-hover:scale-105 transition-transform duration-300">
                   <Image
                     src={pillar.image}
-                    alt={pillar.title}
+                    alt={`Research Pillar ${pillar.id}: ${pillar.title}`}
                     fill
                     className="object-contain"
                     sizes="(max-width: 640px) 80px, 80px"

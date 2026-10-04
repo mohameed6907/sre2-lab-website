@@ -1,10 +1,28 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "SRE² Lab - Research",
+export const metadata: Metadata = {
+  title: "Research Axes & Strategic Pillars",
   description:
-    "Explore SRE² Lab's scientific research axes and strategic pillars in energy harvesting, flexible electronics, smart sensing, and self-powered systems.",
+    "Explore SRE² Lab's scientific research axes and strategic pillars in renewable energy harvesting, flexible electronics, smart sensing, supercapacitors, and autonomous self-powered systems at SBTÜ.",
+  alternates: {
+    canonical: "https://sre2lab.org.tr/research",
+  },
+  openGraph: {
+    title: "Research Axes & Strategic Pillars | SRE² Lab",
+    description:
+      "Explore SRE² Lab's scientific research axes and strategic pillars in renewable energy harvesting, flexible electronics, smart sensing, and self-powered systems.",
+    url: "https://sre2lab.org.tr/research",
+    images: [
+      {
+        url: "/research/research-hero-banner.jpg",
+        width: 1024,
+        height: 343,
+        alt: "SRE² Lab Nanotechnology and Energy Research Scientific Cover",
+      },
+    ],
+  },
 };
 
 const researchAxes = [
@@ -208,7 +226,7 @@ export default function Research() {
                   }`}>
                   <Image
                     src={axis.image}
-                    alt={axis.title}
+                    alt={`Research Axis ${axis.label}: ${axis.title}`}
                     fill
                     className="object-contain p-2 hover:scale-105 transition-transform duration-500"
                     sizes="(max-width: 768px) 100vw, 40vw"
@@ -266,7 +284,7 @@ export default function Research() {
                 <div className="relative w-full h-44 bg-white overflow-hidden border-b border-slate-100 flex items-center justify-center p-3">
                   <Image
                     src={pillar.image}
-                    alt={pillar.title}
+                    alt={`Research Pillar ${pillar.num}: ${pillar.title}`}
                     fill
                     className="object-contain p-2 group-hover:scale-105 transition-transform duration-500"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -301,12 +319,12 @@ export default function Research() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
             {[
-              { src: "/cover-pages/image1.png", alt: "Highlighted Research 1" },
-              { src: "/cover-pages/image2.png", alt: "Highlighted Research 2" },
-              { src: "/cover-pages/image3.png", alt: "Highlighted Research 3" },
-              { src: "/cover-pages/image4.jpg", alt: "Highlighted Research 4" },
-              { src: "/cover-pages/image5.jpg", alt: "Highlighted Research 5" },
-              { src: "/cover-pages/image6.jpg", alt: "Highlighted Research 6" },
+              { src: "/cover-pages/image1.png", alt: "Nano Energy Journal Cover - Self-Powered Nanogenerators for Multi-Environment Energy Harvesting" },
+              { src: "/cover-pages/image2.png", alt: "Advanced Sustainable Systems Journal Cover (Wiley-VCH) - Sustainable Energy Materials" },
+              { src: "/cover-pages/image3.png", alt: "Materials Horizons Journal Cover (Royal Society of Chemistry) - Neuromorphic Devices for Electronic Skin Applications" },
+              { src: "/cover-pages/image4.jpg", alt: "3D-FAL Based Triboelectric Nanogenerator under Extreme Environmental Conditions (Advanced Materials)" },
+              { src: "/cover-pages/image5.jpg", alt: "Seagrass-Derived Sustainable Tribopositive Film for Marine Energy Harvesting (Nano Energy)" },
+              { src: "/cover-pages/image6.jpg", alt: "Snake Ecdysis Biomaterial Membrane for Triboelectric and Piezoelectric Nanogenerators and Health Monitoring Sensors" },
             ].map((img, i) => (
               <div
                 key={i}

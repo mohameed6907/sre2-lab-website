@@ -308,7 +308,7 @@ export default function FacilitiesClient() {
                     {/* Actual Large Image */}
                     <Image
                       src={item.image}
-                      alt={item.title}
+                      alt={`${item.title} (${item.model}) - SRE² Lab Research Instrumentation`}
                       fill
                       className="object-contain p-6 group-hover:scale-105 transition-transform duration-500 ease-out drop-shadow-sm"
                       sizes="(max-width: 1024px) 100vw, 50vw"
@@ -448,7 +448,7 @@ export default function FacilitiesClient() {
             <div className="relative w-full h-80 sm:h-96 bg-gradient-to-b from-slate-50 via-white to-slate-100/80 rounded-xl border border-slate-200/80 flex items-center justify-center p-6 mb-6 overflow-hidden">
               <Image
                 src={selectedEquipment.image}
-                alt={selectedEquipment.title}
+                alt={`${selectedEquipment.title} (${selectedEquipment.model}) - SRE² Lab High-Resolution Instrument View`}
                 fill
                 className="object-contain p-4 drop-shadow-md"
                 sizes="(max-width: 768px) 100vw, 800px"

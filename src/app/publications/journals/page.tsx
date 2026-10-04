@@ -1,9 +1,20 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { journalArticles } from "@/lib/publicationsData";
 
-export const metadata = {
-  title: "SRE² Lab - Selected Articles",
-  description: "Peer-reviewed publications authored by Dr. Qazi Muhammad Saqib and SRE² Lab researchers.",
+export const metadata: Metadata = {
+  title: "Selected Journal Articles",
+  description:
+    "Peer-reviewed high-impact journal articles published by Dr. Qazi Muhammad Saqib and SRE² Lab researchers in journals such as Advanced Materials, Nano Energy, and Chemical Engineering Journal.",
+  alternates: {
+    canonical: "https://sre2lab.org.tr/publications/journals",
+  },
+  openGraph: {
+    title: "Selected Journal Articles | SRE² Lab",
+    description:
+      "Peer-reviewed publications authored by Dr. Qazi Muhammad Saqib and SRE² Lab researchers.",
+    url: "https://sre2lab.org.tr/publications/journals",
+  },
 };
 
 export default function JournalArticlesPage() {

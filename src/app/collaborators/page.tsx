@@ -1,9 +1,19 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "SRE² Lab - Collaborative Professors",
+export const metadata: Metadata = {
+  title: "Collaborating Professors & Institutions",
   description:
-    "Academic and scientific research partners collaborating with SRE² Lab across sustainable energy, self-powered systems, sensors, flexible electronics, and advanced functional materials.",
+    "Academic and scientific research partners collaborating with SRE² Lab across South Korea, Pakistan, and Türkiye in sustainable energy, self-powered systems, sensors, flexible electronics, and functional materials.",
+  alternates: {
+    canonical: "https://sre2lab.org.tr/collaborators",
+  },
+  openGraph: {
+    title: "Collaborating Professors & Institutions | SRE² Lab",
+    description:
+      "Academic and scientific research partners collaborating with SRE² Lab across sustainable energy, self-powered systems, sensors, and flexible electronics.",
+    url: "https://sre2lab.org.tr/collaborators",
+  },
 };
 
 interface Collaborator {

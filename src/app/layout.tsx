@@ -20,10 +20,39 @@ const inter = Inter({
 
 /* ---------- site-wide <head> metadata ---------- */
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://sre2-lab.vercel.app"),
-  title: "SRE² Lab - Sustainability & Renewable Energy Research Laboratory",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://sre2lab.org.tr"),
+  title: {
+    default: "SRE² Lab - Sustainability & Renewable Energy Research Laboratory",
+    template: "%s | SRE² Lab",
+  },
   description:
-    "SRE² Lab develops advanced technologies for harvesting, storing, sensing and intelligently managing energy through sustainable materials, flexible electronics and autonomous self-powered systems.",
+    "Sustainability & Renewable Energy Research Laboratory (SRE² Lab) at Sivas University of Science and Technology (SBTÜ). Developing advanced energy harvesting, self-powered systems, supercapacitors, and flexible electronics.",
+  keywords: [
+    "SRE² Lab",
+    "Sustainability and Renewable Energy Research Laboratory",
+    "SBTÜ",
+    "Sivas University of Science and Technology",
+    "Dr. Qazi Muhammad Saqib",
+    "Energy Harvesting",
+    "Self-Powered Systems",
+    "Triboelectric Nanogenerators",
+    "TENG",
+    "Piezoelectric Nanogenerators",
+    "PENG",
+    "Supercapacitors",
+    "Flexible Electronics",
+    "Electronic Skin",
+    "Autonomous Sensors",
+  ],
+  authors: [
+    { name: "Dr. Qazi Muhammad Saqib", url: "https://sre2lab.org.tr/pi" },
+    { name: "SRE² Lab", url: "https://sre2lab.org.tr" },
+  ],
+  creator: "SRE² Lab - Sivas University of Science and Technology",
+  publisher: "SRE² Lab",
+  alternates: {
+    canonical: "https://sre2lab.org.tr",
+  },
 
   /* ---- FAVICON & TOUCH ICONS ---- */
   icons: {
@@ -40,7 +69,8 @@ export const metadata: Metadata = {
   /* ---- Open Graph / Twitter ---- */
   openGraph: {
     type: "website",
-    url: "https://sre2-lab.vercel.app/",
+    locale: "en_US",
+    url: "https://sre2lab.org.tr",
     siteName: "SRE² Lab",
     title: "SRE² Lab - Sustainability & Renewable Energy Research Laboratory",
     description:
@@ -56,11 +86,76 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@SRE_Lab",
+    title: "SRE² Lab - Sustainability & Renewable Energy Research Laboratory",
+    description:
+      "SRE² Lab develops advanced technologies for harvesting, storing, sensing and intelligently managing energy through sustainable materials, flexible electronics and autonomous self-powered systems.",
     images: ["/sre-logo.png"],
   },
 
-  robots: { "max-image-preview": "large" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
+
+const jsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://sre2lab.org.tr/#website",
+      "url": "https://sre2lab.org.tr",
+      "name": "Sustainability & Renewable Energy Research Laboratory",
+      "alternateName": [
+        "SRE² Lab",
+        "SRE2 Lab",
+        "SRE² Lab SBTÜ",
+        "Sustainability & Renewable Energy Research Laboratory (SRE² Lab)"
+      ],
+      "description":
+        "Sustainability & Renewable Energy Research Laboratory (SRE² Lab) at Sivas University of Science and Technology (SBTÜ). Developing advanced energy harvesting, self-powered systems, supercapacitors, and flexible electronics.",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://sre2lab.org.tr/#organization"
+      }
+    },
+    {
+      "@type": "ResearchOrganization",
+      "@id": "https://sre2lab.org.tr/#organization",
+      "name": "Sustainability & Renewable Energy Research Laboratory",
+      "alternateName": "SRE² Lab",
+      "url": "https://sre2lab.org.tr",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sre2lab.org.tr/sre-logo.png",
+        "width": "512",
+        "height": "512"
+      },
+      "image": "https://sre2lab.org.tr/hero/sre-lab-interior.jpg",
+      "parentOrganization": {
+        "@type": "CollegeOrUniversity",
+        "name": "Sivas University of Science and Technology",
+        "alternateName": ["Sivas Bilim ve Teknoloji Üniversitesi", "SBTÜ"],
+        "url": "https://www.sbtu.edu.tr"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Department of Electrical & Electronics Engineering, Sivas University of Science and Technology",
+        "addressLocality": "Sivas",
+        "addressCountry": "TR"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/sre2-lab-sbtu/"
+      ]
+    }
+  ]
 };
 
 export default function RootLayout({
@@ -77,14 +172,7 @@ export default function RootLayout({
           type="application/ld+json"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              url: "https://sre-lab.github.io/",
-              name: "Sustainability & Renewable Energy Research Laboratory",
-              alternateName: "SRE² Lab",
-              logo: "https://sre-lab.github.io/sre-logo.png",
-            }),
+            __html: JSON.stringify(jsonLdGraph),
           }}
         />
       </head>
