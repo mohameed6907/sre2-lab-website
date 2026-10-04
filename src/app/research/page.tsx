@@ -139,8 +139,38 @@ const strategicPillars = [
 ];
 
 export default function Research() {
+  const researchSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://sre2lab.org.tr/research#webpage",
+    "url": "https://sre2lab.org.tr/research",
+    "name": "Research Axes & Strategic Pillars | SRE² Lab",
+    "description":
+      "Explore SRE² Lab's scientific research axes and strategic pillars in renewable energy harvesting, flexible electronics, smart sensing, supercapacitors, and autonomous self-powered systems at SBTÜ.",
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "SRE² Lab Core Research Axes & Pillars",
+      "itemListElement": researchAxes.map((axis, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+          "@type": "ResearchProject",
+          "name": axis.title,
+          "alternateName": axis.label,
+          "description": axis.desc,
+          "keywords": axis.keywords,
+          "url": `https://sre2lab.org.tr/research#${axis.id}`
+        }
+      }))
+    }
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(researchSchema) }}
+      />
       {/* ── Page Header ─────────────────────────────────────────── */}
       <section className="pt-28 pb-20 md:pt-36 md:pb-28 border-b border-slate-200">
         <div className="container-custom fade-up">

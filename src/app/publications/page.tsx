@@ -46,8 +46,46 @@ const navTabs = [
 ];
 
 export default function PublicationsPage() {
+  const publicationsSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://sre2lab.org.tr/publications#webpage",
+    "url": "https://sre2lab.org.tr/publications",
+    "name": "Scientific Publications & Scholarly Output | SRE² Lab",
+    "description":
+      "Comprehensive scientific publications record of SRE² Lab and Dr. Qazi Muhammad Saqib, including peer-reviewed high-impact journal articles, international conference papers, patents, and books.",
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "SRE² Lab Scientific Publications Record",
+      "numberOfItems": journalArticles.length + conferencePapers.length + patents.length + books.length,
+      "itemListElement": journalArticles.slice(0, 20).map((pub, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+          "@type": "ScholarlyArticle",
+          "headline": pub.title,
+          "name": pub.title,
+          "author": pub.authors.split(",").map(a => ({
+            "@type": "Person",
+            "name": a.trim()
+          })),
+          "publication": {
+            "@type": "PublicationEvent",
+            "name": pub.venue
+          },
+          "datePublished": pub.year,
+          ...(pub.url ? { "url": pub.url } : {})
+        }
+      }))
+    }
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(publicationsSchema) }}
+      />
       {/* ── Page Header ─────────────────────────────────────── */}
       <section className="pt-32 pb-14 md:pt-40 md:pb-16 border-b border-slate-200 bg-white">
         <div className="container-custom">

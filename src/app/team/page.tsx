@@ -38,8 +38,49 @@ export default function Team() {
   const pi = teamData.find(m => m.id === 1 || m.role.toLowerCase().includes("principal investigator") || m.role.toLowerCase().includes("director"));
   const members = teamData.filter(m => m.id !== (pi?.id || 1));
 
+  const teamSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": "https://sre2lab.org.tr/team#webpage",
+    "url": "https://sre2lab.org.tr/team",
+    "name": "Research Team & Members | SRE² Lab",
+    "description":
+      "Meet the researchers, graduate students, and engineers at SRE² Lab working on flexible electronics, self-powered sensors, and renewable energy technologies at SBTÜ.",
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "SRE² Lab Researchers & Team Members",
+      "itemListElement": teamData.map((member, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+          "@type": "Person",
+          "name": member.name,
+          "jobTitle": member.role,
+          "image": `https://sre2lab.org.tr/pfp/${member.pfp_file_name}`,
+          ...(member.linkedin ? { "sameAs": [member.linkedin] } : {}),
+          ...(member.email ? { "email": member.email } : {}),
+          "worksFor": {
+            "@type": "ResearchOrganization",
+            "name": "Sustainability & Renewable Energy Research Laboratory (SRE² Lab)",
+            "url": "https://sre2lab.org.tr",
+            "parentOrganization": {
+              "@type": "CollegeOrUniversity",
+              "name": "Sivas University of Science and Technology",
+              "alternateName": "SBTÜ",
+              "url": "https://www.sbtu.edu.tr"
+            }
+          }
+        }
+      }))
+    }
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(teamSchema) }}
+      />
       {/* ── Page Header ─────────────────────────────────────── */}
       <section className="pt-28 pb-16 md:pt-36 md:pb-20 border-b border-slate-200 bg-white">
         <div className="container-custom fade-up">
