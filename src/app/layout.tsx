@@ -147,11 +147,11 @@ const jsonLdGraph = {
       },
       "description":
         "Sustainability & Renewable Energy Research Laboratory (SRE² Lab) at Sivas University of Science and Technology (SBTÜ). Developing advanced energy harvesting, self-powered systems, supercapacitors, and flexible electronics.",
-      "email": "qazi.saqib@sivas.edu.tr",
+      "email": "qazisaqib@sivas.edu.tr",
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "Academic Inquiries & Admissions",
-        "email": "qazi.saqib@sivas.edu.tr"
+        "email": "qazisaqib@sivas.edu.tr"
       },
       "address": {
         "@type": "PostalAddress",

@@ -72,14 +72,14 @@ export default function JoinUs() {
               <div>
                 <p className="text-xs text-slate-500 font-body">Direct Application Email</p>
                 <a
-                  href="mailto:qazi.saqib@sivas.edu.tr"
+                  href="mailto:qazisaqib@sivas.edu.tr"
                   className="font-heading font-bold text-base text-emerald-700 hover:text-emerald-800 underline"
                 >
-                  qazi.saqib@sivas.edu.tr
+                  qazisaqib@sivas.edu.tr
                 </a>
               </div>
               <a
-                href="mailto:qazi.saqib@sivas.edu.tr?subject=Application%20for%20SRE%C2%B2%20Lab%20Position"
+                href="mailto:qazisaqib@sivas.edu.tr?subject=Application%20for%20SRE%C2%B2%20Lab%20Position"
                 className="btn-primary py-2.5 px-6 text-xs"
               >
                 Send Application Email &rarr;

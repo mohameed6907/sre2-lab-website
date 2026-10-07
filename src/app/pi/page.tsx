@@ -192,6 +192,7 @@ const piPersonSchema = {
       "url": "https://sre2lab.org.tr"
     },
     "description": "Department of Electrical & Electronics Engineering, Sivas University of Science & Technology (SBTÜ). Founder & Team Lead of SRE² Lab, directing research on self-powered nanogenerators (TENG/PENG), flexible electronics, and autonomous sensor systems.",
+    "email": "qazisaqib@sivas.edu.tr",
     "image": "https://sre2lab.org.tr/pfp/saqib.jpg",
     "url": "https://sre2lab.org.tr/pi",
     "sameAs": [
@@ -340,10 +341,10 @@ export default function PIProfile() {
                       Email
                     </span>
                     <a
-                      href="mailto:qazisaqib12@gmail.com"
+                      href="mailto:qazisaqib@sivas.edu.tr"
                       className="text-slate-800 font-medium hover:text-[#00549d] transition-colors"
                     >
-                      qazisaqib12@gmail.com
+                      qazisaqib@sivas.edu.tr
                     </a>
                   </div>
                 </div>

@@ -161,18 +161,18 @@ export default function Home() {
             </div>
 
             {/* Key Indicators */}
-            <div className="pt-6 border-t border-slate-200/80 grid grid-cols-3 gap-2 sm:gap-4">
+            <div className="pt-6 border-t border-slate-200/80 grid grid-cols-3 gap-2 sm:gap-4 items-end">
               <div>
-                <p className="font-heading font-extrabold text-xl sm:text-3xl text-slate-900">5</p>
-                <p className="text-[9px] sm:text-[11px] font-heading font-semibold uppercase tracking-wider text-slate-500 mt-0.5 leading-tight">Research Axes</p>
+                <p className="font-heading font-extrabold text-xl sm:text-3xl text-slate-900 leading-none">5</p>
+                <p className="text-[9px] sm:text-[11px] font-heading font-semibold uppercase tracking-wider text-slate-500 mt-1.5 leading-tight">Research Axes</p>
               </div>
               <div>
-                <p className="font-heading font-extrabold text-xl sm:text-3xl text-emerald-700">100%</p>
-                <p className="text-[9px] sm:text-[11px] font-heading font-semibold uppercase tracking-wider text-slate-500 mt-0.5 leading-tight">Self-Powered</p>
+                <p className="font-heading font-extrabold text-xs sm:text-lg md:text-xl text-emerald-700 leading-tight">Self-Powered</p>
+                <p className="text-[9px] sm:text-[11px] font-heading font-semibold uppercase tracking-wider text-slate-500 mt-1.5 leading-tight">Technologies</p>
               </div>
               <div>
-                <p className="font-heading font-extrabold text-xl sm:text-3xl text-slate-900">SBTÜ</p>
-                <p className="text-[9px] sm:text-[11px] font-heading font-semibold uppercase tracking-wider text-slate-500 mt-0.5 leading-tight">Research Laboratory</p>
+                <p className="font-heading font-extrabold text-xl sm:text-3xl text-slate-900 leading-none">SBTÜ</p>
+                <p className="text-[9px] sm:text-[11px] font-heading font-semibold uppercase tracking-wider text-slate-500 mt-1.5 leading-tight">Research Laboratory</p>
               </div>
             </div>
           </div>

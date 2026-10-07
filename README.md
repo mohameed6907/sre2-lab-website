@@ -151,4 +151,4 @@ The website is optimized for seamless zero-configuration deployment on **[Vercel
 
 - **Codebase**: Academic Open Source License.
 - **Scientific Figures, Imagery & Content**: © SRE² Lab — Sivas University of Science and Technology (SBTÜ). All rights reserved.
-- **Contact & Inquiries**: Dr. Qazi Muhammad Saqib (`qazi.saqib@sivas.edu.tr`).
+- **Contact & Inquiries**: Dr. Qazi Muhammad Saqib (`qazisaqib@sivas.edu.tr`).
