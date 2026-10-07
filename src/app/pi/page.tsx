@@ -102,7 +102,7 @@ const careerData = [
 
 const awardsData = [
   {
-    title: "Best Researcher Candidate of Korea Nationwide Award",
+    title: "Best Research Candidate of Korea Nationwide Award",
     year: "2022",
     conferring: "Republic of Korea (Nationwide Recognition)",
     description:
@@ -273,7 +273,7 @@ export default function PIProfile() {
                   PI &bull; SRE² Lab
                 </span>
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-heading font-semibold bg-amber-50 text-amber-900 border border-amber-200">
-                  🏆 Best Researcher Candidate Award (Korea) 2022
+                  🏆 Best Research Candidate Award (Korea) 2022
                 </span>
               </div>
             </div>
@@ -315,7 +315,7 @@ export default function PIProfile() {
                 {/* Biographical Summary */}
                 <div className="bg-slate-50/90 rounded-xl p-4 sm:p-5 border border-slate-200/70 mt-3">
                   <p className="text-xs sm:text-sm text-slate-700 font-body leading-relaxed">
-                    <strong>Dr. Qazi Muhammad Saqib</strong> is an Assistant Professor at SBTÜ and Principal Investigator of the <strong>SRE² Lab</strong>. With over 4.5 years of post-PhD research and 3.5+ years of university teaching experience, his research pioneers self-powered energy harvesters (TENG/PENG), flexible electronics, electronic skin, soft robotics, and smart sensory interfaces. Awarded the prestigious <strong>Brain Pool Fellowship</strong> by the Korean Government (NRF &amp; Ministry of Science and ICT), he received the nationwide <strong>Best Researcher Candidate of Korea Award in 2022</strong>.
+                    <strong>Dr. Qazi Muhammad Saqib</strong> is an Assistant Professor at SBTÜ and Principal Investigator of the <strong>SRE² Lab</strong>. With over 4.5 years of post-PhD research and 3.5+ years of university teaching experience, his research pioneers self-powered energy harvesters (TENG/PENG), flexible electronics, electronic skin, soft robotics, and smart sensory interfaces. Awarded the prestigious <strong>Brain Pool Fellowship</strong> by the Korean Government (NRF &amp; Ministry of Science and ICT), he received the nationwide <strong>Best Research Candidate of Korea Award in 2022</strong>.
                   </p>
                 </div>
               </div>
