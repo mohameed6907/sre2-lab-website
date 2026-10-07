@@ -39,7 +39,7 @@ export default function Header() {
           {/* Official SRE² Lab Logo — start of header, slightly after the start edge */}
           <Link href="/" className="flex items-center group select-none pl-1 sm:pl-2 shrink-0">
             <Image
-              src="/Logo/SRE2_Logo_Header.svg"
+              src="/Logo/SRE2_LAB_Logo_Header.svg"
               alt="SRE² Lab - Sustainability & Renewable Energy Research Laboratory"
               width={400}
               height={114}

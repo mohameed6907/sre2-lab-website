@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: "https://sre2lab.org.tr/publications/conferences",
     images: [
       {
-        url: "https://sre2lab.org.tr/Logo/SRE2_Logo_Primary.png",
+        url: "https://sre2lab.org.tr/Logo/SRE2_LAB_Logo_Primary.png",
         width: 1774,
         height: 561,
         alt: "SRE² Lab Logo",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "Conference Proceedings & Presentations | SRE² Lab",
     description:
       "International conference proceedings and symposium presentations by Dr. Qazi Muhammad Saqib and colleagues.",
-    images: ["https://sre2lab.org.tr/Logo/SRE2_Logo_Primary.png"],
+    images: ["https://sre2lab.org.tr/Logo/SRE2_LAB_Logo_Primary.png"],
   },
 };
 

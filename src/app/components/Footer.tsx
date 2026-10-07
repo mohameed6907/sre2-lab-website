@@ -34,7 +34,7 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <Link href="/" className="inline-block mb-4 group">
               <Image
-                src="/Logo/SRE2_Logo_Primary.svg"
+                src="/Logo/SRE2_LAB_Logo_Primary.svg"
                 alt="SRE² Lab Logo"
                 width={260}
                 height={82}

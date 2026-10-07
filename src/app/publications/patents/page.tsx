@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: "https://sre2lab.org.tr/publications/patents",
     images: [
       {
-        url: "https://sre2lab.org.tr/Logo/SRE2_Logo_Primary.png",
+        url: "https://sre2lab.org.tr/Logo/SRE2_LAB_Logo_Primary.png",
         width: 1774,
         height: 561,
         alt: "SRE² Lab Logo",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "Patents & Intellectual Property | SRE² Lab",
     description:
       "Intellectual property and device patents authored by Dr. Qazi Muhammad Saqib and colleagues.",
-    images: ["https://sre2lab.org.tr/Logo/SRE2_Logo_Primary.png"],
+    images: ["https://sre2lab.org.tr/Logo/SRE2_LAB_Logo_Primary.png"],
   },
 };
 

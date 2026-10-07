@@ -41,7 +41,7 @@ export async function generateMetadata(props: BlogPostPageProps) {
   const postUrl = `https://sre2lab.org.tr/news/${post.slug}`;
   const imageUrl = post.img_file_name
     ? `https://sre2lab.org.tr/news/img/${post.img_file_name}`
-    : "https://sre2lab.org.tr/Logo/SRE2_Logo_Primary.png";
+    : "https://sre2lab.org.tr/Logo/SRE2_LAB_Logo_Primary.png";
 
   return {
     title: post.title,
@@ -114,7 +114,7 @@ export default async function BlogPostPage(props: BlogPostPageProps) {
     "mainEntityOfPage": `https://sre2lab.org.tr/news/${post.slug}`,
     "image": post.img_file_name
       ? [`https://sre2lab.org.tr/news/img/${post.img_file_name}`]
-      : ["https://sre2lab.org.tr/Logo/SRE2_Logo_Primary.png"],
+      : ["https://sre2lab.org.tr/Logo/SRE2_LAB_Logo_Primary.png"],
     "author": {
       "@type": "Person",
       "name": "Dr. Qazi Muhammad Saqib",
@@ -126,7 +126,7 @@ export default async function BlogPostPage(props: BlogPostPageProps) {
       "url": "https://sre2lab.org.tr",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://sre2lab.org.tr/Logo/SRE2_Logo_Primary.png"
+        "url": "https://sre2lab.org.tr/Logo/SRE2_LAB_Logo_Primary.png"
       }
     }
   };
