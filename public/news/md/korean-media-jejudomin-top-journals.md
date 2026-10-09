@@ -6,7 +6,7 @@
 
 ## National Media Highlights Sustained Research Excellence in World-Leading Journals
 
-*Jeju Domin Ilbo* profiled the international research alliances and consistent top-tier publications produced by Prof. Jinho Bae and Dr. Saqib's research group in world-renowned journals including ***Advanced Functional Materials*** and ***Nano Energy***.
+*Jeju Domin Ilbo* profiled the international research alliances and consistent top-tier publications produced by Prof. Jinho Bae and Dr. Saqib's research laboratory in world-renowned journals including ***Advanced Functional Materials*** and ***Nano Energy***.
 
 The feature details the laboratory's focus on blue energy technologies, self-powered ocean telemetry platforms, and high-performance hybrid energy materials designed to support carbon neutrality and maritime digital transformation.
 

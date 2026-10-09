@@ -6,7 +6,7 @@
 
 ## Solving 2D/3D MXene Restacking & Oxidation Bottlenecks
 
-Leading South Korean press outlets covered major research by Prof. Jinho Bae and Dr. Saqib's research group published in the ***Chemical Engineering Journal (CEJ)*** (Impact Factor: 13.3).
+Leading South Korean press outlets covered major research by Prof. Jinho Bae and Dr. Saqib's research laboratory published in the ***Chemical Engineering Journal (CEJ)*** (Impact Factor: 13.3).
 
 The research addresses the severe self-restacking and oxidative degradation that historically limits 2D transition metal carbides/nitrides (MXenes) in electrochemical energy storage devices.
 

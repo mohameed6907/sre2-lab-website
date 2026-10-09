@@ -1,12 +1,12 @@
-# Launching the Sustainability & Renewable Energy Research Group (SRE² Group)
+# Launching the Sustainability & Renewable Energy Research Laboratory (SRE² Laboratory)
 
-We are pleased to announce the official launch of the **Sustainability & Renewable Energy Research Group (SRE² Group)** at **Sivas University of Science and Technology (SBTÜ)**, under the leadership of **Dr. Qazi Muhammad Saqib**.
+We are pleased to announce the official launch of the **Sustainability & Renewable Energy Research Laboratory (SRE² Laboratory)** at **Sivas University of Science and Technology (SBTÜ)**, under the leadership of **Dr. Qazi Muhammad Saqib**.
 
 Our mission is to pioneer interdisciplinary research in sustainable energy harvesting, flexible and wearable electronics, smart sensing systems, and self-powered autonomous devices.
 
 ## Core Research Focus
 
-SRE² Group addresses the fundamental challenge of traditional electronics: battery dependency and environmental footprints. Our research is structured across five complementary research axes:
+SRE² Laboratory addresses the fundamental challenge of traditional electronics: battery dependency and environmental footprints. Our research is structured across five complementary research axes:
 
 1. **Sustainable Materials:** Nature-derived substrates, biopolymers, and advanced functional layered materials.
 2. **Energy Harvesting & Storage:** Unconventional generation from mechanical motion and vibrations via Triboelectric (TENG) and Piezoelectric (PENG) Nanogenerators paired with micro-supercapacitors.
@@ -16,4 +16,4 @@ SRE² Group addresses the fundamental challenge of traditional electronics: batt
 
 ## Academic & Strategic Collaborations
 
-SRE² Group is actively developing partnerships with academic institutions, defense sectors, aerospace researchers, and international industry partners. We invite motivated graduate students, postdocs, and research collaborators to join our growing team at SBTÜ.
+SRE² Laboratory is actively developing partnerships with academic institutions, defense sectors, aerospace researchers, and international industry partners. We invite motivated graduate students, postdocs, and research collaborators to join our growing team at SBTÜ.

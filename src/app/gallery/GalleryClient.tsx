@@ -130,7 +130,7 @@ export const galleryItems: GalleryItem[] = [
       },
       {
         url: "/gallery/campus/convergence-technology-institute.jpg",
-        caption: "Academic delegation and research group at the Advanced Institutes of Convergence Technology."
+        caption: "Academic delegation and research laboratory at the Advanced Institutes of Convergence Technology."
       },
       {
         url: "/gallery/campus/thesis-seminar-presentation.jpg",
